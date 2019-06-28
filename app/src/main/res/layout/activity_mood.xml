@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MoodActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp">
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/back_next_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/close_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_wrong_icon" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/next_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_right_icon" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_howru"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/back_next_sign"
+            android:gravity="center"
+            android:text="HOW WERE YOU?"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/text_howru"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray_light"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/date_time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_howru"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_today_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@drawable/ic_calender_icon"
+                    android:drawableRight="@drawable/ic_down_arrow_icon"
+                    android:drawablePadding="5dp"
+                    android:text="Today,Date"
+                    android:textAlignment="center"
+                    android:textColor="#9056a3" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@id/txt_today_time"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/gray_light"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_today_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_clock_icon"
+                    android:drawableRight="@drawable/ic_down_arrow_icon"
+                    android:drawablePadding="5dp"
+                    android:text="Today,Time"
+                    android:textColor="#9056a3" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@id/txt_today_time"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/gray_light"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/date_time_layout"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray_light"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:id="@+id/face_layout_line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date_time_layout"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/happy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/rad" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-10dp"
+                    android:text="rad"
+                    android:textColor="#f68c1f" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/veryhappy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/good" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-10dp"
+                    android:text="good"
+                    android:textColor="#41a766" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/inlove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/meh" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-10dp"
+                    android:text="meh"
+                    android:textColor="#9056a3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/smiling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/tinColorIcon_s"
+                    android:src="@drawable/bad" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-10dp"
+                    android:text="bad"
+                    android:textColor="@color/tinColorIcon_s" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/smilinghappy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/awful" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-10dp"
+                    android:text="awful"
+                    android:textColor="#6f7b7e" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/face_layout_line1"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray_light"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/face_layout_line2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/face_layout_line1"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="5">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/confused"
+                    android:layout_width="50dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/confused"
+                    android:tint="@color/tinColorIcon_us" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/unhappy"
+                    android:layout_width="50dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/unhappy"
+                    android:tint="@color/tinColorIcon_us" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/sad"
+
+                    android:layout_width="50dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/sad"
+                    android:tint="@color/tinColorIcon_us" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/mad"
+
+                    android:layout_width="50dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/mad"
+                    android:tint="@color/tinColorIcon_us" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/angry"
+
+                    android:layout_width="50dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/angry"
+                    android:tint="@color/tinColorIcon_us" />
+
+            </RelativeLayout>
+
+            <!-- <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_margin="5dp"
+                 android:layout_weight="1"
+                 android:src="@drawable/happiness_face"/>
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_margin="5dp"
+                 android:layout_weight="1"
+                 android:src="@drawable/very_happiness"/>
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_margin="5dp"
+                 android:layout_weight="1"
+                 android:src="@drawable/happiness_face"
+                 />
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_margin="5dp"
+                 android:layout_weight="1"
+                 android:src="@drawable/very_happiness"/>
+             <ImageView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_margin="5dp"
+                 android:layout_weight="1"
+                 android:src="@drawable/happiness_face"
+
+                 />-->
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/face_layout_line2"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray_light"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/activity_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="5">
+            <!--<RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/mood_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:src="@drawable/work"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mood_1"
+                    android:text="work"
+                    android:textSize="15sp"
+                    android:gravity="center"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/mood_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/relax"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mood_2"
+                    android:text="relax"
+                    android:textSize="15sp"
+                    android:gravity="center"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/mood_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/friends"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mood_3"
+                    android:text="awful"
+                    android:textSize="15sp"
+                    android:gravity="center"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/mood_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_menu_gallery"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mood_4"
+                    android:text="Music"
+                    android:textSize="15sp"
+                    android:gravity="center"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/mood_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/very_happiness"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mood_5"
+                    android:text="awful"
+                    android:textSize="15sp"
+                    android:gravity="center"/>
+            </RelativeLayout>-->
+
+        </LinearLayout>
+        <!--<android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/verified"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/white"
+            app:fabSize="auto"
+            android:outlineSpotShadowColor="@color/gray_light"
+            android:outlineAmbientShadowColor="@color/gray"
+            />-->
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort">
+        <item>Total</item>
+        <item>Date</item>
+        <item>Frequency</item>
+        <item>Mobile data</item>
+    </string-array>
+    <string-array name="duration">
+        <item>Today</item>
+        <item>Week</item>
+        <item>Month</item>
+        <item>Year</item>
+
+    </string-array>
+    <integer-array name="duration_int">
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+
+    </integer-array>
+    <string-array name="colors">
+        <item>#FFFFF0</item>
+        <item>#FFFFE0</item>
+        <item>#FFFF00</item>
+        <item>#FFFAFA</item>
+        <item>#FFFAF0</item>
+    </string-array>
+
+</resources>

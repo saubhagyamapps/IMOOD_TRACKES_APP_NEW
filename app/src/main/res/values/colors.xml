@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6cd286</color>
+    <color name="colorPrimaryDark">#b895cd</color>
+    <color name="colorAccent">#f4ca54</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000</color>
+    <color name="transparent">#00000000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="cardHeader">#f4ca54</color>
+    <color name="tinColorIcon_us">#f4ca54</color>
+    <color name="tinColorIcon_s">#5579a6</color>
+    <color name="progress_color">#94d1fe</color>
+    <color name="backrgound_selected_color">#9056a3</color>
+    <color name="sky_blue">#87ceeb</color>
+    <color name="tab_bubble">#B3f4ca54</color>
+    <color name="button_color">#6632C0</color>
+</resources>

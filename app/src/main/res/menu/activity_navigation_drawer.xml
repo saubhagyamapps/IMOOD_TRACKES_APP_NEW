@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/DashBoard"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_dashbord_icon"
+            android:title="DashBoard" />
+    </group>
+    <group
+        android:id="@+id/Mood"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/ic_mood_icon"
+            android:title="Mood" />
+    </group>
+    <group
+        android:id="@+id/MoodSett"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/MoodSetting"
+            android:icon="@drawable/ic_mood_icon"
+            android:title="Mood Setting" />
+    </group>
+    <group
+        android:id="@+id/SocialInteraction"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_calllogs"
+            android:icon="@drawable/ic_social_in_icon"
+            android:title="Social Interaction" />
+    </group>
+    <group
+        android:id="@+id/AppUsage"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_socialapp"
+            android:icon="@drawable/ic_social_icon"
+            android:title="App Usage" />
+    </group>
+    <group
+        android:id="@+id/Fitnessdata"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_googlefit"
+            android:icon="@drawable/ic_fitness_icon"
+            android:title="Fitness data" />
+    </group>
+    <group
+        android:id="@+id/CurrentLocation"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_getCurrentLocation"
+            android:icon="@drawable/ic_location_icon"
+            android:title="CurrentLocation" />
+    </group>
+    <group
+        android:id="@+id/WorkLocation"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_work_location"
+            android:icon="@drawable/ic_work_icon"
+            android:title="Work Location" />
+    </group>
+    <group
+        android:id="@+id/workHomeGraph"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_work"
+            android:icon="@drawable/ic_work_icon"
+            android:title="Work And Home Graph" />
+    </group>
+    <group
+        android:id="@+id/MoodGraph"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_graph"
+            android:icon="@drawable/ic_work_icon"
+            android:title="Mood Graph" />
+    </group>
+    <group
+        android:id="@+id/SocialGraph"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_social"
+            android:icon="@drawable/ic_work_icon"
+            android:title="Social Graph" />
+    </group>
+    <group
+        android:id="@+id/StepGraph"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_step"
+            android:icon="@drawable/ic_work_icon"
+            android:title="Step Graph" />
+
+    </group>
+    <group
+        android:id="@+id/Mood_Social_Call_Graph"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mood_social_call"
+            android:icon="@drawable/ic_work_icon"
+            android:title="Mood and Social_Call Graph" />
+
+    </group>
+    <group
+        android:id="@+id/Mood_SocialGraph"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mood_social"
+            android:icon="@drawable/ic_work_icon"
+            android:title="Mood and Social Graph" />
+
+    </group>
+    <group
+        android:id="@+id/Mood_PhoneLockGraph"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mood_phone_lock"
+            android:icon="@drawable/ic_work_icon"
+            android:title="Mood and Phone Lock Graph" />
+
+    </group>
+    <group
+        android:id="@+id/Mood_PicsGraph"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mood_pics"
+            android:icon="@drawable/ic_work_icon"
+            android:title="Mood and Pics Graph" />
+
+    </group>
+
+    <group
+        android:id="@+id/Mood_CallsGraph"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mood_Calls"
+            android:icon="@drawable/ic_work_icon"
+            android:title="Mood and Calls Graph" />
+
+    </group>
+    <group
+        android:id="@+id/Mood_ContactsGraph"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mood_contacts"
+            android:icon="@drawable/ic_work_icon"
+            android:title="Mood and Contacts Graph" />
+
+    </group>
+    <group
+        android:id="@+id/Mood_CaloriesGraph"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mood_calories"
+            android:icon="@drawable/ic_work_icon"
+            android:title="Mood and Calories Graph" />
+
+    </group>
+    <group
+        android:id="@+id/Mood_Work_Home_TimeGraph"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mood_work_home_time"
+            android:icon="@drawable/ic_work_icon"
+            android:title="Mood and Work_Home_time Graph" />
+
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_editprofile"
+                android:icon="@drawable/profilesettings"
+                android:title="Profile Setting" />
+            <item
+                android:id="@+id/nav_resetpassword"
+                android:icon="@drawable/resetpassword"
+                android:title="Reset Password" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

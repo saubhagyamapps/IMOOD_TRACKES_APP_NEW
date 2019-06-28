@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.EditProfilFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/imagesView"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@color/colorPrimaryDark" />
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/acc_profile_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+
+                    app:civ_border_color="#ffff"
+                    app:civ_border_width="1.5dp" />
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/prof_camera_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/acc_profile_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-10dp"
+                    android:src="@drawable/ic_menu_camera" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="3dp">
+
+
+                <EditText
+                    android:id="@+id/edt_profusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#FFFF"
+                    android:hint="User Name"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp"
+                    android:paddingRight="15dp" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="3dp">
+
+                <EditText
+                    android:id="@+id/edt_profemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#FFFF"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:hint="Email address"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:textSize="15sp" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="3dp">
+
+
+                <EditText
+                    android:id="@+id/edt_profmobileno"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#FFFF"
+                    android:hint="Mobile Number"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:textSize="15sp" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="3dp">
+
+
+                <EditText
+                    android:id="@+id/edt_profaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#FFFF"
+                    android:hint="Address"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="15dp"
+                    android:textSize="15sp" />
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_profGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text="Gender" />
+
+                <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+                    android:id="@+id/gender_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="50dp"
+                    custom:activeBgColor="@color/colorPrimary"
+                    custom:inactiveBgColor="#ffff"
+                    custom:separatorColor="@color/black"
+                    custom:textToggleLeft="@string/toggle_male"
+                    custom:textToggleRight="@string/toggle_female"
+                    custom:toggleWidth="100dp">
+
+                </belka.us.androidtoggleswitch.widgets.ToggleSwitch>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button"
+                android:text="@string/update"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

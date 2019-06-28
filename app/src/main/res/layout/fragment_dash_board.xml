@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.DashBoardFragment">
+
+    <RelativeLayout
+        android:id="@+id/upper_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/sleep_layout"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/sleep_circle_layout"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/calls"/>
+            <com.budiyev.android.circularprogressbar.CircularProgressBar
+                android:id="@+id/progressBarStepCount"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                app:animateProgress="true"
+                app:backgroundStrokeColor="@color/white"
+                app:backgroundStrokeWidth="3dp"
+                app:drawBackgroundStroke="true"
+                app:foregroundStrokeCap="butt"
+                app:foregroundStrokeColor="@color/black"
+                app:foregroundStrokeWidth="3dp"
+                app:indeterminate="false"
+                app:indeterminateMinimumAngle="45"
+                app:indeterminateRotationAnimationDuration="1200"
+                app:indeterminateSweepAnimationDuration="600"
+                app:maximum="100"
+                app:progress="25"
+                app:progressAnimationDuration="100"
+                app:startAngle="270" />
+
+
+            <TextView
+                android:id="@+id/txt_sleep_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/social_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/social_circle_layout">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/social_n"/>
+            <com.budiyev.android.circularprogressbar.CircularProgressBar
+                android:id="@+id/social_progress_bar"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                app:animateProgress="true"
+                app:backgroundStrokeColor="@color/white"
+                app:backgroundStrokeWidth="3dp"
+                app:drawBackgroundStroke="true"
+                app:foregroundStrokeCap="butt"
+                app:foregroundStrokeColor="@color/black"
+                app:foregroundStrokeWidth="3dp"
+                app:indeterminate="false"
+                app:indeterminateMinimumAngle="45"
+                app:indeterminateRotationAnimationDuration="1200"
+                app:indeterminateSweepAnimationDuration="600"
+                app:maximum="100"
+                app:progress="25"
+                app:progressAnimationDuration="100"
+                app:startAngle="270" />
+
+            <TextView
+                android:id="@+id/txt_social_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mood_layout_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="100dp"
+            android:src="@drawable/dashboard_smily" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/lower_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+
+        <RelativeLayout
+            android:id="@+id/work_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/work_circle_layout">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/working"/>
+            <com.budiyev.android.circularprogressbar.CircularProgressBar
+                android:id="@+id/testss"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                app:animateProgress="true"
+                app:backgroundStrokeColor="@color/white"
+                app:backgroundStrokeWidth="3dp"
+                app:drawBackgroundStroke="true"
+                app:foregroundStrokeCap="butt"
+                app:foregroundStrokeColor="@color/black"
+                app:foregroundStrokeWidth="3dp"
+                app:indeterminate="false"
+                app:indeterminateMinimumAngle="45"
+                app:indeterminateRotationAnimationDuration="1200"
+                app:indeterminateSweepAnimationDuration="600"
+                app:maximum="100"
+                app:progress="25"
+                app:progressAnimationDuration="100"
+                app:startAngle="270" />
+
+
+            <TextView
+                android:id="@+id/txt_work_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/exercise_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/exercise_circle_layout">
+             <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/walking"/>
+            <com.budiyev.android.circularprogressbar.CircularProgressBar
+                android:id="@+id/test2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                app:animateProgress="true"
+                app:backgroundStrokeColor="@color/white"
+                app:backgroundStrokeWidth="3dp"
+                app:drawBackgroundStroke="true"
+                app:foregroundStrokeCap="butt"
+                app:foregroundStrokeColor="@color/black"
+                app:foregroundStrokeWidth="3dp"
+                app:indeterminate="false"
+                app:indeterminateMinimumAngle="45"
+                app:indeterminateRotationAnimationDuration="1200"
+                app:indeterminateSweepAnimationDuration="600"
+                app:maximum="100"
+                app:progress="25"
+                app:progressAnimationDuration="100"
+                app:startAngle="270" />
+
+
+            <TextView
+                android:id="@+id/txt_exercise_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

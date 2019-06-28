@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activity.InterNetConnectionActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/imgesGif"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="No Internet Connection"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <pl.droidsonroids.gif.GifTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/imgesGif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/not_connection" />
+
+    <TextView
+        android:id="@+id/txtInternet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgesGif"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="No Internet Connection found."
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtInternet"
+        android:layout_centerHorizontal="true"
+        android:text="Please check your connection."
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+</RelativeLayout>

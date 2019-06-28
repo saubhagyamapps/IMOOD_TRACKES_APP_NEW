@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/layoutMood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtCurrentDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="12 April 2019" />
+
+                <com.budiyev.android.circularprogressbar.CircularProgressBar
+                    android:id="@+id/progressBarMood"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/txtCurrentDate"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    app:animateProgress="true"
+                    app:backgroundStrokeColor="@color/gray_very_light"
+                    app:backgroundStrokeWidth="3dp"
+                    app:drawBackgroundStroke="true"
+                    app:foregroundStrokeCap="butt"
+                    app:foregroundStrokeColor="#a7e71e"
+                    app:foregroundStrokeWidth="5dp"
+                    app:indeterminate="false"
+                    app:indeterminateMinimumAngle="45"
+                    app:indeterminateRotationAnimationDuration="1200"
+                    app:indeterminateSweepAnimationDuration="600"
+                    app:maximum="100"
+                    app:progressAnimationDuration="100"
+                    app:startAngle="270" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/floatingMood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progressBarMood"
+                    android:layout_marginLeft="-30dp"
+                    android:layout_marginTop="-20dp"
+                    android:layout_toRightOf="@+id/progressBarMood"
+                    app:srcCompat="@drawable/ic_add_icon" />
+
+                <TextView
+                    android:id="@+id/txtWorkingMood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/progressBarMood"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutMood"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/imageCallIcon"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/call_icon_large_size"
+                            app:civ_border_color="#000"
+                            app:civ_border_width="0dp" />
+
+                        <com.budiyev.android.circularprogressbar.CircularProgressBar
+                            android:id="@+id/progressBarCall"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_centerHorizontal="true"
+                            app:animateProgress="true"
+                            app:backgroundStrokeColor="@color/gray_very_light"
+                            app:backgroundStrokeWidth="3dp"
+                            app:drawBackgroundStroke="true"
+                            app:foregroundStrokeCap="butt"
+                            app:foregroundStrokeColor="#94d1fe"
+                            app:foregroundStrokeWidth="5dp"
+                            app:indeterminate="false"
+                            app:indeterminateMinimumAngle="45"
+                            app:indeterminateRotationAnimationDuration="1200"
+                            app:indeterminateSweepAnimationDuration="600"
+                            app:maximum="100"
+                            app:progressAnimationDuration="100"
+                            app:startAngle="270" />
+
+                        <TextView
+                            android:id="@+id/txtCallName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/progressBarCall"
+                            android:layout_centerHorizontal="true"
+                            android:text="Calls"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/callTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtCallName"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/txtCallTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/callTime"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/imageSocialIcon"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/social_icon_large_size"
+                            app:civ_border_color="#000"
+                            app:civ_border_width="0dp" />
+
+                        <com.budiyev.android.circularprogressbar.CircularProgressBar
+                            android:id="@+id/progressBarSocial"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_centerHorizontal="true"
+                            app:animateProgress="true"
+                            app:backgroundStrokeColor="@color/gray_very_light"
+                            app:backgroundStrokeWidth="3dp"
+                            app:drawBackgroundStroke="true"
+                            app:foregroundStrokeCap="butt"
+                            app:foregroundStrokeColor="#6788cf"
+                            app:foregroundStrokeWidth="5dp"
+                            app:indeterminate="false"
+                            app:indeterminateMinimumAngle="45"
+                            app:indeterminateRotationAnimationDuration="1200"
+                            app:indeterminateSweepAnimationDuration="600"
+                            app:maximum="100"
+                            app:progressAnimationDuration="100"
+                            app:startAngle="270" />
+
+                        <TextView
+                            android:id="@+id/txtSocialName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_below="@+id/progressBarSocial"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:text="Social"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/socialTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtSocialName"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/txtSocialTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:layout_below="@+id/socialTime"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/imagePhoneIcon"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/phone_icon_large_size"
+                            app:civ_border_color="#000"
+                            app:civ_border_width="0dp" />
+
+
+                        <com.budiyev.android.circularprogressbar.CircularProgressBar
+                            android:id="@+id/progressPhoneCall"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_centerHorizontal="true"
+                            app:animateProgress="true"
+                            app:backgroundStrokeColor="@color/gray_very_light"
+                            app:backgroundStrokeWidth="3dp"
+                            app:drawBackgroundStroke="true"
+                            app:foregroundStrokeCap="butt"
+                            app:foregroundStrokeColor="#94d1fe"
+                            app:foregroundStrokeWidth="5dp"
+                            app:indeterminate="false"
+                            app:indeterminateMinimumAngle="45"
+                            app:indeterminateRotationAnimationDuration="1200"
+                            app:indeterminateSweepAnimationDuration="600"
+                            app:maximum="100"
+                            app:progressAnimationDuration="100"
+                            app:startAngle="270" />
+
+                        <TextView
+                            android:id="@+id/txtPhoneName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_below="@+id/progressPhoneCall"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:text="Phone Use"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/phoneUse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtPhoneName"
+                            android:layout_centerHorizontal="true"
+                            android:text="4h 20m"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/txtPhoneTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="22dp"
+                            android:layout_below="@+id/phoneUse"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:text="(45%)"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/imagesHomeIcon"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/home_icon_large_size"
+                            app:civ_border_color="#000"
+                            app:civ_border_width="0dp" />
+
+
+                        <com.budiyev.android.circularprogressbar.CircularProgressBar
+                            android:id="@+id/progressHomeCount"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_centerHorizontal="true"
+                            app:animateProgress="true"
+                            app:backgroundStrokeColor="@color/gray_very_light"
+                            app:backgroundStrokeWidth="3dp"
+                            app:drawBackgroundStroke="true"
+                            app:foregroundStrokeCap="butt"
+                            app:foregroundStrokeColor="#c1ffaa"
+                            app:foregroundStrokeWidth="5dp"
+                            app:indeterminate="false"
+                            app:indeterminateMinimumAngle="45"
+                            app:indeterminateRotationAnimationDuration="1200"
+                            app:indeterminateSweepAnimationDuration="600"
+                            app:maximum="100"
+                            app:progressAnimationDuration="100"
+                            app:startAngle="270" />
+
+                        <TextView
+                            android:id="@+id/txtHomeName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/progressHomeCount"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:text="Home"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/homeTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtHomeName"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/txtHomeCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/homeTime"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/imageWorkIcon"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/work_icon_large_size"
+                            app:civ_border_color="#000"
+                            app:civ_border_width="0dp" />
+
+
+                        <com.budiyev.android.circularprogressbar.CircularProgressBar
+                            android:id="@+id/progressBarWorking"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_centerHorizontal="true"
+                            app:animateProgress="true"
+                            app:backgroundStrokeColor="@color/gray_very_light"
+                            app:backgroundStrokeWidth="3dp"
+                            app:drawBackgroundStroke="true"
+                            app:foregroundStrokeCap="butt"
+                            app:foregroundStrokeColor="#fcc6c2"
+                            app:foregroundStrokeWidth="5dp"
+                            app:indeterminate="false"
+                            app:indeterminateMinimumAngle="45"
+                            app:indeterminateRotationAnimationDuration="1200"
+                            app:indeterminateSweepAnimationDuration="600"
+                            app:maximum="100"
+                            app:progressAnimationDuration="100"
+                            app:startAngle="270" />
+
+                        <TextView
+                            android:id="@+id/txtWorkName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/progressBarWorking"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:text="Work"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/workTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtWorkName"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/txtWorkingTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/workTime"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/imageFitnessIcon"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/fit"
+                            app:civ_border_color="#000"
+                            app:civ_border_width="0dp" />
+
+
+                        <com.budiyev.android.circularprogressbar.CircularProgressBar
+                            android:id="@+id/progressFitWorking"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_centerHorizontal="true"
+                            app:animateProgress="true"
+                            app:backgroundStrokeColor="@color/gray_very_light"
+                            app:backgroundStrokeWidth="3dp"
+                            app:drawBackgroundStroke="true"
+                            app:foregroundStrokeCap="butt"
+                            app:foregroundStrokeColor="#c1ffaa"
+                            app:foregroundStrokeWidth="5dp"
+                            app:indeterminate="false"
+                            app:indeterminateMinimumAngle="45"
+                            app:indeterminateRotationAnimationDuration="1200"
+                            app:indeterminateSweepAnimationDuration="600"
+                            app:maximum="100"
+                            app:progressAnimationDuration="100"
+                            app:startAngle="270" />
+
+                        <TextView
+                            android:id="@+id/txtFitName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/progressFitWorking"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:text="Fit"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/fitTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtFitName"
+                            android:layout_centerHorizontal="true"
+                            android:text="2h 50m"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/txtFitnessTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/fitTime"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:text="(60%)"
+                            android:textColor="@color/black"
+                            android:textSize="13sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
