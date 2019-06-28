@@ -6,17 +6,19 @@
        android:id="@+id/nav_dashboard"
        android:icon="@drawable/ic_dashbord_icon"
        android:title="DashBoard" />
-   <item
-       android:id="@+id/nav_social_interaction"
-       android:icon="@drawable/ic_social_in_icon"
-       android:title="Social Interaction" />
+
    <item
        android:id="@+id/nav_mood"
        android:icon="@drawable/ic_mood_icon"
        android:title="Mood" />
 
    <item
+       android:id="@+id/nav_social_interaction"
+       android:icon="@drawable/ic_social_in_icon"
+       android:title="Social Interaction" />
+
+  <!-- <item
        android:id="@+id/nav_socialapp"
        android:icon="@drawable/ic_social_icon"
-       android:title="App Usage" />
+       android:title="App Usage" />-->
 </menu>
