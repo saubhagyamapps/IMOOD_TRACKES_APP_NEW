@@ -25,7 +25,7 @@
         <item
             android:id="@+id/MoodSetting"
             android:icon="@drawable/ic_mood_icon"
-            android:title="Mood Setting" />
+            android:title="Move into Mood" />
     </group>
     <group
         android:id="@+id/SocialInteraction"
@@ -35,21 +35,14 @@
             android:icon="@drawable/ic_social_in_icon"
             android:title="Social Interaction" />
     </group>
-    <group
-        android:id="@+id/AppUsage"
-        android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_socialapp"
-            android:icon="@drawable/ic_social_icon"
-            android:title="App Usage" />
-    </group>
+
     <group
         android:id="@+id/Fitnessdata"
         android:checkableBehavior="single">
         <item
             android:id="@+id/nav_googlefit"
             android:icon="@drawable/ic_fitness_icon"
-            android:title="Fitness data" />
+            android:title="Move Mins" />
     </group>
     <group
         android:id="@+id/CurrentLocation"
@@ -57,7 +50,7 @@
         <item
             android:id="@+id/nav_getCurrentLocation"
             android:icon="@drawable/ic_location_icon"
-            android:title="CurrentLocation" />
+            android:title="Home Time" />
     </group>
     <group
         android:id="@+id/WorkLocation"
@@ -65,7 +58,7 @@
         <item
             android:id="@+id/nav_work_location"
             android:icon="@drawable/ic_work_icon"
-            android:title="Work Location" />
+            android:title="Working Time" />
     </group>
     <group
         android:id="@+id/workHomeGraph"
@@ -73,7 +66,7 @@
         <item
             android:id="@+id/nav_home_work"
             android:icon="@drawable/ic_work_icon"
-            android:title="Work And Home Graph" />
+            android:title="Work And Home " />
     </group>
     <group
         android:id="@+id/MoodGraph"
@@ -81,7 +74,7 @@
         <item
             android:id="@+id/nav_graph"
             android:icon="@drawable/ic_work_icon"
-            android:title="Mood Graph" />
+            android:title="Mood " />
     </group>
     <group
         android:id="@+id/SocialGraph"
@@ -89,7 +82,7 @@
         <item
             android:id="@+id/nav_social"
             android:icon="@drawable/ic_work_icon"
-            android:title="Social Graph" />
+            android:title="Social " />
     </group>
     <group
         android:id="@+id/StepGraph"
@@ -97,7 +90,7 @@
         <item
             android:id="@+id/nav_step"
             android:icon="@drawable/ic_work_icon"
-            android:title="Step Graph" />
+            android:title="Fitness" />
 
     </group>
     <group
@@ -106,7 +99,7 @@
         <item
             android:id="@+id/nav_mood_social_call"
             android:icon="@drawable/ic_work_icon"
-            android:title="Mood and Social_Call Graph" />
+            android:title="Mood and Social_Call" />
 
     </group>
     <group
@@ -115,7 +108,7 @@
         <item
             android:id="@+id/nav_mood_social"
             android:icon="@drawable/ic_work_icon"
-            android:title="Mood and Social Graph" />
+            android:title="Mood and Social " />
 
     </group>
     <group
@@ -124,7 +117,7 @@
         <item
             android:id="@+id/nav_mood_phone_lock"
             android:icon="@drawable/ic_work_icon"
-            android:title="Mood and Phone Lock Graph" />
+            android:title="Mood and Phone Lock" />
 
     </group>
     <group
@@ -133,7 +126,7 @@
         <item
             android:id="@+id/nav_mood_pics"
             android:icon="@drawable/ic_work_icon"
-            android:title="Mood and Pics Graph" />
+            android:title="Mood and Pics" />
 
     </group>
 
@@ -143,7 +136,7 @@
         <item
             android:id="@+id/nav_mood_Calls"
             android:icon="@drawable/ic_work_icon"
-            android:title="Mood and Calls Graph" />
+            android:title="Mood and Calls" />
 
     </group>
     <group
@@ -152,7 +145,7 @@
         <item
             android:id="@+id/nav_mood_contacts"
             android:icon="@drawable/ic_work_icon"
-            android:title="Mood and Contacts Graph" />
+            android:title="Mood and Contacts" />
 
     </group>
     <group
@@ -161,7 +154,7 @@
         <item
             android:id="@+id/nav_mood_calories"
             android:icon="@drawable/ic_work_icon"
-            android:title="Mood and Calories Graph" />
+            android:title="Mood and Calories" />
 
     </group>
     <group
@@ -170,7 +163,7 @@
         <item
             android:id="@+id/nav_mood_work_home_time"
             android:icon="@drawable/ic_work_icon"
-            android:title="Mood and Work_Home_time Graph" />
+            android:title="Mood and Work_Home_time" />
 
     </group>
 

@@ -19,9 +19,6 @@ public class BottomActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
-                case R.id.nav_socialapp:
-                    mTextMessage.setText(R.string.title_home);
-                    return true;
                 case R.id.nav_manage:
                     mTextMessage.setText(R.string.title_dashboard);
                     return true;
