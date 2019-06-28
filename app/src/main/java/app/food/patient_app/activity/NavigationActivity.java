@@ -197,9 +197,7 @@ public class NavigationActivity extends AppCompatActivity
                     case R.id.nav_social_interaction:
                         fragment2 = new SocialIntegrationFragment();
                         break;
-                    case R.id.nav_socialapp:
-                        fragment2 = new MainActivity();
-                        break;
+
                 }
                 if (fragment2 != null) {
                     FragmentManager fragmentManager = getSupportFragmentManager();
@@ -325,8 +323,6 @@ public class NavigationActivity extends AppCompatActivity
             BottomNavigationView bottomNavigationView;
             bottomNavigationView = (BottomNavigationView)findViewById(R.id.navigation);
             bottomNavigationView.setSelectedItemId(R.id.nav_social_interaction);
-        } else if (id == R.id.nav_socialapp) {
-            fragment = new MainActivity();
         } else if (id == R.id.nav_googlefit) {
             fragment = new GoogleFitDataFragment();
         } else if (id == R.id.nav_resetpassword) {
